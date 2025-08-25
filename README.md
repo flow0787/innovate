@@ -44,6 +44,8 @@ Production VPC (10.1.0.0/24)
 ```
 Separate VPCs for RDS and EKS for better isolation between components, as well as for decoupling between stateful and stateless services. ***VPC PEERING*** will be required for the connectivity betweeen the EKS cluster and RDS.
 
+![Service Architecture](service_architecture.png "Service Architecture")
+
 ### Network Security Implementation
 **1. Network Segmentation:**
 - Public subnets: Load balancers, NAT and Internet Gateways only
